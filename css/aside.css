@@ -1,0 +1,65 @@
+.aside {
+  
+  }
+  .aside .shop {
+   position: fixed;
+  bottom: 180px;
+  right: 30px;
+  width: 266px;
+  height: 226px;
+    background-image: url(../img/goToWeb.b01b4d617e09d78bb9cf.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  .aside .shop div {
+    text-align: center;
+  }
+  .aside .shop div a {
+    color: white;
+    line-height: 1.5
+}
+  .aside .shop div a strong {
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .aside .top {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  background: #444444;
+  }
+  .aside .top a {
+  display: block;
+    height: 50px;
+  width: 50px;
+    position: relative;
+    z-index: 20;
+    
+  }
+  .aside .top a:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    background: white;
+    bottom: calc(50% - 7px);
+    left:  calc(50% - 0px);
+  }
+  .aside .top a:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 1px solid white;
+    border-left: transparent;
+    border-bottom: transparent;
+    bottom: calc(50% - 3px);
+    left: calc(50% - 2px);
+    transform: rotate(-45deg)
+}

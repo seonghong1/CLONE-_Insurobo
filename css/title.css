@@ -1,0 +1,233 @@
+#title {
+    width: 100%;
+    height: 100%;
+  position: relative;
+  }
+  #title .inner {
+    padding: 0 238px;
+    height: 750px;
+    display: flex;
+    padding-top: 200px;
+ 
+ 
+  }
+  #title .inner .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content:center;
+    padding-top: 70px;
+    overflow: hidden;
+  }
+  #title .inner .left h2 {
+    font-size: 50px;
+    line-height: 1.3;
+    padding-bottom: 30px;
+    font-weight: 900;
+  }
+  #title .inner .left p {
+    font-size: 20px;
+    line-height: 1.3;
+    padding-bottom: 100px;
+    color: #5D5D5D;   
+}
+  #title .inner .left .button{
+    display: flex;
+    justify-content: space-between;
+  }
+  #title .inner .left .button button{
+    width: calc(100% / 2 - 10px);
+    border-radius: 50px;
+    height: 66px;
+    font-size: 17px;
+    color: white;
+    
+}
+
+  #title .inner .left .button button:nth-child(1){
+    background: #4575f5
+  }   
+ #title .inner .left .button button:nth-child(2){
+    background: #6f85e3
+  } 
+  
+  #title .inner .right {
+    width: 60%;
+    position: relative;
+    padding-top: 150px;
+  
+  }
+  #title .inner .right>img{
+    transform: translateX(20%)  translateY(-90px);
+    display: block;
+    width: 600px;
+  }
+  #title .inner .right .box {
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 2px #D5D5D5;
+    align-items: center;
+    animation-duration: 1s;
+  }
+    @keyframes box1{
+      0%{opacity: 0;
+            transform: translateX(300px);
+      }
+      100%{opacity: 1;
+         translateX(0px);
+      }
+    }
+  #title .inner .right .box:nth-child(2){
+    position: absolute;
+    right: 140px;
+    top: 20px;
+    animation-name: box1;
+  }
+   #title .inner .right .box:nth-child(3){
+    position: absolute;
+    right: 80px;
+    top: 160px;
+    animation-delay: 0.2s;
+     animation-name: box1;
+  }
+  #title .inner .right .box:nth-child(4){
+    position: absolute;
+    right: -40px;
+    top: 300px;
+    width: 246px;
+    animation-delay: 0.4s;
+    animation-name: box1;
+  }
+  
+  #title .inner .right .box .img {
+    width: 40%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+  #title .inner .right .box:nth-child(2) .img{
+     background-image: url(../img/title1.jpg);
+    position: relative;
+  }
+#title .inner .right .box:nth-child(2) .img::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  top: 22px;
+  left: 18px;
+  border-radius: 4px;
+  animation-name: opacity;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+ 
+}
+#title .inner .right .box:nth-child(2) .img::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  top: 22px;
+  right: 41px;
+  border-radius: 4px;
+  animation-name: opacity;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+  @keyframes opacity{
+    0%{opacity: 0;
+      
+    }
+    
+    100%{opacity: 1;
+
+    }
+  }
+   #title .inner .right .box:nth-child(3) .img{
+       background-image: url(../img/title2.jpg);
+     position: relative;
+    }
+  #title .inner .right .box:nth-child(3) .img::before{
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../img/title2_1.jpg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 13px;
+    animation-name: cloud;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes cloud{
+    0%{ opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{opacity: 1;
+      transform: translateY(15px);
+    }
+    
+  }
+   #title .inner .right .box:nth-child(4) .img{
+     background-image: url(../img/title3.jpg);
+     position: relative;
+     height: 70px;
+     background-position: left;
+    }
+
+    #title .inner .right .box:nth-child(4) .img::before{
+    width: 50px;
+    height: 50px;
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../img/title3_2.jpg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation-name: box;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  } 
+
+  @keyframes box{
+    0%{ transform: rotateZ(5deg);
+        ;
+    }
+    100%{transform: rotate(-5deg);
+      ;
+    }
+    
+  }
+  #title .inner .right .box .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    line-height: 1.4
+    
+  }
+  #title .inner .right .box .text h3{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #title .inner .right .box .text p{
+    font-size: 15px;
+  }
+ 
+ 

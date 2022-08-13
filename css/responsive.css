@@ -1,0 +1,384 @@
+@media screen and (max-width:1200px){
+
+}
+
+@media screen and (max-width:768px){
+    /*header*/
+  #header .inner{
+   padding: 0px;
+    padding-left: 4vw;
+  }
+  #header .inner ul{
+    display: none;
+  }
+
+  #title .inner .right .box{
+  }
+  #title .inner{
+    padding: 0 5%;
+    flex-direction: column;
+   
+    height: 1500px;
+  }
+  #title .inner .left{
+    width: 100%;
+  }
+  #title .inner .left h2{
+    font-size: 27px;;
+    padding-top: 100px;
+    width: 100%;
+  }
+  #title .inner .left p{
+    padding-bottom: 15vw;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  #title .inner .left .button{
+    flex-direction: column;
+    gap: 10px;
+  }
+  #title .inner .left .button button{
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+  }
+    #title .inner .right{
+    background-size: contain;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+    height: 58%;
+  }
+  #title .inner .right > img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+  }
+  
+  #title .inner .right .box{
+    width: 150px;
+    height: 30px;
+  }
+  #title .inner .right .box:nth-child(2){
+    left: 0;
+    top: 150px;
+  }
+  
+  #title .inner .right .box:nth-child(2) .img::before{
+    left: 26px;
+  }
+    #title .inner .right .box:nth-child(2) .img::after{
+    left: 18px;
+  }
+  
+  #title .inner .right .box:nth-child(3){
+    left: 40px;
+    top: 300px;
+  }
+  #title .inner .right .box:nth-child(3) .img::before{
+    right: -5px;
+  }
+  
+  #title .inner .right .box:nth-child(4){
+    left: 80px;
+    top: 450px;
+  }
+  
+  
+  /*main*/
+  
+  #main .first{
+    padding: 0px;
+    height: 1100px;
+    padding: 0 5%;
+  }
+  #main .first .inner{
+    
+  }
+  #main .first .inner .top{
+    height: 200px;
+  }
+  #main .first .inner .top h2{
+    font-size: 25px;
+
+  }
+  #main .first .inner .bottom{
+    flex-direction: column;
+    height: 800px;
+        margin-top: 50px;
+  }
+  #main .first .inner .bottom .left{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 0;
+
+  }
+  
+  #main .first .inner .bottom .left p{
+    font-size: 15px;
+  }
+
+  #main .first .inner .bottom .right > img{
+    width: 300px;
+    height: 400px;
+    left: calc(50% - 150px);
+  }
+  #main .first .inner .bottom .right{
+    height: 50%;
+    width: 100%;
+    display: flex;
+
+  }
+  #main .first .inner .bottom .right > div{
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+  }
+  #main .first .inner .bottom .right div img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+  }
+  #main .first .inner .bottom .right > div:nth-child(2){
+    top: -5%;
+    
+  }
+    #main .first .inner .bottom .right > div:nth-child(3){
+    top: 50%
+  }
+    #main .first .inner .bottom .right > div:nth-child(4){
+    bottom: 5%;
+  }
+  
+ 
+  
+  #main .second{
+    padding: 0px;
+    padding: 0 5%;
+   margin-top: 50px; 
+  }
+  
+  #main .second .inner .top{
+    height: 200px;
+  }
+  #main .second .inner .top h2{
+    font-size: 25px;
+  }
+  #main .second .inner .bottom{
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  #main .second .inner .bottom .left{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 40%;
+    padding-top: 40px;
+  }
+  #main .second .inner .bottom .left p{
+    font-size: 13px;
+  }
+  #main .second .inner .bottom .right{
+   width: 100%;
+    height: 60%;
+    position: relative;
+  }
+  #main .second .inner .bottom .right img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 180px);
+  }
+  
+  
+  
+  .third{
+    padding: 0 5%;
+  }
+  .third .inner{
+    flex-direction: column;
+  }
+  .third .inner .left{
+    width: 100%
+  }
+  .third .inner .left img{
+    margin-bottom: 0;
+  }
+  .third .inner .left h2{
+    font-size: 22px;
+    margin:0;
+    padding: 50px 0;
+    
+  }
+  .third .inner .left p{
+    font-size: 15px;
+  }
+  .third .inner .right{
+    width: 100%;
+    height: 400px;
+  }
+  .third .inner .right img{
+    
+  }
+  .third .inner .right img:nth-child(1){
+    width: 300px;
+    height: 98px;
+    top: 0;
+    left: 0;
+  }
+  .third .inner .right img:nth-child(2){
+    width: 300px;
+    height: 120px;
+    top: 130px;
+    right: 0;
+  }
+  .third .inner .right img:nth-child(3){
+    width: 300px;
+    height: 98px;
+    top: 260px;
+    left: 20px;
+    
+  }
+  .third .inner .right img:nth-child(4){
+    width: 50px;
+    height: 50px;
+    top: -50px;
+  }
+  .third .inner .right img:nth-child(5){
+     width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 0;
+  }
+ 
+  .fourth{
+    padding: 0 5%;
+  }
+  .fourth .inner{
+    flex-direction: column;
+  }
+  .fourth .inner .left{
+    width: 100%;
+  }
+  .fourth .inner .left h2{
+    font-size: 22px;
+    padding: 30px 0
+  }
+  .fourth .inner .left p{
+    font-size: 14px;
+  }
+  .fourth .inner .right{
+    width: 100%;
+    height: 361.8px;
+    margin: 150px 0
+  }
+  .fourth .inner .right img:nth-child(1){
+    width: 200px;
+    height: 372px;
+    left: -10px;
+    top: -80px
+  }
+  .fourth .inner .right img:nth-child(2){
+    width: 200px;
+    height: 372px;
+    right: -10px;
+    top: 30px;
+  }
+  
+  
+  
+  
+  
+  .aside .shop{
+  bottom: 220px!important;;
+  width: 90px !important;;
+  height: 76px!important;
+    background-size: contain;
+  }
+  .aside .shop div a{
+    font-size: 0px;
+  }
+  .aside .shop div a strong{
+    font-size: 13px!important;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*하단*/
+  #footer{
+    padding: 0px 5%;
+    height: 320px;
+  }
+  #footer .inner{
+    padding: 8% 0px;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+  }
+  #footer .inner>a{
+    display: block;
+    padding-bottom: 40px;
+  }
+  #footer .inner a img{
+    width: 80px;
+  }
+  #footer .inner .left{
+    width: 100%;
+    justify-content: space-between;
+  }
+  #footer .inner .left ul:nth-child(1){
+    padding: 0px;
+    width: 55%;
+  }
+  #footer .inner .left ul{
+    padding: 0;
+  }
+  #footer .inner .right{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+  #footer .inner .right ul{
+    align-items: flex-start;
+    padding-bottom: 20px;
+    
+  }
+  #footer .inner .left ul li{
+    font-size: 11px;
+  }
+ 
+  #footer .inner .right ul li.mail{
+    padding-bottom: 30px;
+    font-size: 11px;
+    width: 200px
+    
+  }
+  #footer .inner .right ul .amove li a{
+    font-size: 10px;
+  }
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+}
+  
+  
+  
+  
+  
+  
+  
+  
