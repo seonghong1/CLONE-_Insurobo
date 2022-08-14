@@ -13,11 +13,53 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/ham.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //변수선언
+        let n=0;
+        let winW=$(window).width();
+        let winH=$(window).height();
+        //햄버거 메뉴 만들기, 햄버거와 ul메뉴 묶기
+        $("#header .inner").append("<a href='#' class='ham'></a");
+        $("#header .inner ul,#header .inner .ham").wrapAll($("<div class='wrapgnb'></div>"));
+
+
+        //햄버거 클릭시 검은색 백그라운드 on off
+        
+            $("#header .inner .ham").click(function(){
+                if(n==0){
+            $("div.menuback").remove();
+            $("#header").prepend("<div class='menuback'></div>");
+            $(".menuback").css({"height":winH});
+            n=1;
+            }else{
+                $(".menuback").addClass("menubackmove")
+                n=0;
+            }
+       
+            //햄버거 클릭시 메뉴 보이게하기
+            $(".menuback .wrapgnb2").remove()
+            $(".menuback").append("<div class='wrapgnb2'></div>");
+            $("#header .inner ul").appendTo(".menuback .wrapgnb2");
+            $(".menuback .wrapgnb2 ul").clone().appendTo(".wrapgnb");
+            $(".wrapgnb2").css({"height":winH,"width":winW});
+            
+       
+       
+        });
+    });
+</script>
+
+
+
+
 <style>
     body{
         font-family: 'Noto';

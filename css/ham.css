@@ -1,0 +1,50 @@
+.menuback{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    animation-name: moveon;
+    animation-duration: 1s;
+    right: 0;
+}
+
+@keyframes moveon{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.menubackmove{
+transform: translateX(100%);
+transition: all 0.5s;
+ 
+}
+#header .inner .wrapgnb{
+
+}
+.menuback .wrapgnb2{
+    display: flex;
+    padding-top: 130px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.menuback .wrapgnb2 ul{
+    width: 100%;
+}
+
+.menuback .wrapgnb2 ul li{
+    height: 80px;
+}
+.menuback .wrapgnb2 ul li a{
+    font-size: 18px;
+}
+.menuback .wrapgnb2 ul li:first-child a{
+    color: coral;
+    border-bottom: 2px solid coral;
+    height: 30px;
+    width: 100px;
+    display: block;
+}

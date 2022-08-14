@@ -4,12 +4,37 @@
 
 @media screen and (max-width:768px){
     /*header*/
+  #header{
+    height: 80px;
+    position: relative;
+    
+  }
   #header .inner{
-   padding: 0px;
-    padding-left: 4vw;
+   padding: 0 4vw;
   }
   #header .inner ul{
     display: none;
+  }
+  #header .inner .ham{
+    position: relative;
+    width: 18px;
+    height: 12px;
+    border:  2px solid black;
+    border-left: none;
+    border-right: none;
+    right: 4vw;
+    background-color: transparent;
+    display: block;
+  }
+  #header .inner .ham:before{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
   }
 
   #title .inner .right .box{
