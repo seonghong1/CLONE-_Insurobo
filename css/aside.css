@@ -2,16 +2,19 @@
   
   }
   .aside .shop {
-   position: fixed;
-  bottom: 180px;
-  right: 30px;
-  width: 266px;
-  height: 226px;
+    position: fixed;
+    bottom: 180px;
+    right: 30px;
+    width: 266px;
+    height: 226px;
     background-image: url(../img/goToWeb.b01b4d617e09d78bb9cf.png);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 20;
+    transition: all 0.5s;
+    opacity: 0.3;
+    
   }
   .aside .shop div {
     text-align: center;
@@ -31,6 +34,7 @@
   height: 50px;
   width: 50px;
   background: #444444;
+    transition: all 0.5s;
   }
   .aside .top a {
   display: block;
@@ -38,6 +42,7 @@
   width: 50px;
     position: relative;
     z-index: 20;
+    opacity: 0.3;
     
   }
   .aside .top a:before{

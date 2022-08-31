@@ -29,37 +29,71 @@
         //햄버거 메뉴 만들기, 햄버거와 ul메뉴 묶기
         $("#header .inner").append("<a href='#' class='ham'></a");
         $("#header .inner ul,#header .inner .ham").wrapAll($("<div class='wrapgnb'></div>"));
-
-
         //햄버거 클릭시 검은색 백그라운드 on off
-        
             $("#header .inner .ham").click(function(){
                 if(n==0){
             $("div.menuback").remove();
             $("#header").prepend("<div class='menuback'></div>");
             $(".menuback").css({"height":winH});
+            $
             n=1;
             }else{
                 $(".menuback").addClass("menubackmove")
                 n=0;
             }
-       
             //햄버거 클릭시 메뉴 보이게하기
             $(".menuback .wrapgnb2").remove()
             $(".menuback").append("<div class='wrapgnb2'></div>");
             $("#header .inner ul").appendTo(".menuback .wrapgnb2");
             $(".menuback .wrapgnb2 ul").clone().appendTo(".wrapgnb");
             $(".wrapgnb2").css({"height":winH,"width":winW});
-            
+        });
        
-       
+        //aside 투명도
+        $(".aside .shop, .aside .top a").hover(function(){
+          $(this).addClass("asopacity"); 
+        },function(){
+            $(this).removeClass("asopacity");
+        });
+    
+    //main scroll event
+    
+    //first
+    let firstimg = $("#main .first .inner .bottom").offset().top;
+    let firstimgH = $("#main .first .inner .bottom").height()/2;
+    //second
+    let second = $("#main .second .inner .bottom").offset().top;
+    let secondH = $("#main .second .inner .bottom").height()/2;
+    //fourth
+    let fourth = $(".fourth .inner .right").offset().top;
+    let fourthH = $(".fourth .inner .right").height()/2;
+
+        $(window).on("scroll",function(){
+            //first
+            if($(window).scrollTop()>firstimg-winH+firstimgH){
+                $("#main .first .inner .bottom .right>div").addClass("firston");
+            }
+            if($(window).scrollTop()<firstimg-winH+firstimgH){
+                $("#main .first .inner .bottom .right>div").removeClass("firston");
+            }
+            //second
+            if($(window).scrollTop()>second-winH+secondH){
+                $("#main .second .inner .bottom .left, #main .second .inner .bottom .right img").addClass("secondon");
+            }
+            if($(window).scrollTop()<second-winH+secondH){
+                $("#main .second .inner .bottom .left, #main .second .inner .bottom .right img").removeClass("secondon");
+            }
+            //fourth
+            if($(window).scrollTop()>fourth-winH+fourthH){
+                $(".fourth .inner .right img").addClass("fourthon");
+            }
+            if($(window).scrollTop()<fourth-winH+fourthH){
+                $(".fourth .inner .right img").removeClass("fourthon");
+            }
+            console.log($(window).scrollTop())
         });
     });
 </script>
-
-
-
-
 <style>
     body{
         font-family: 'Noto';
